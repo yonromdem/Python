@@ -1,4 +1,5 @@
 import pygame
+import sys
 
 pygame.init()
 
@@ -12,6 +13,7 @@ while running:
     for event in pygame.event.get():
         if event.type == pygame.QUIT:
             running = False
+            sys.exit()
 
     screen.fill(BLK)
     
